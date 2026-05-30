@@ -7,18 +7,18 @@ class Tinear < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/akonwi/tinear/releases/download/v0.1.0/tinear-darwin-arm64.tar.gz"
-      sha256 "48760932dad21e409e9b48c1ba4dfc15ab4f84f310b113c0b24ae2d30018c8e1"
+      sha256 "24f66ff7016c4771bf9bb19c359b68f520c0d84e968868ecae5033d90acea182"
     else
       url "https://github.com/akonwi/tinear/releases/download/v0.1.0/tinear-darwin-amd64.tar.gz"
-      sha256 "6819a5dd2453ce93c1bbc4d79b731e1d3cf14776f4caccf491f9131bd04ebc4b"
+      sha256 "c5fcffb3033cf095d8c9b1b6a66a53661e32a4b46764613bf1f4e3ca8aa7c659"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/akonwi/tinear/releases/download/v0.1.0/tinear-linux-arm64.tar.gz"
-      sha256 "b194a3b01a398548c2cf1b58412715283514fd749f09e13cc51a0a94a027bb00"
+      sha256 "6fad0d87d0b517091ca85ada7546034bb9c4f2e63791d369ed997e1886fd0b9d"
     else
       url "https://github.com/akonwi/tinear/releases/download/v0.1.0/tinear-linux-amd64.tar.gz"
-      sha256 "a090a3697aad6cc64b573a4244a8c393fe9929bbf5ee2f993a357e403653cecc"
+      sha256 "66d61827521a137e33a9a4e950546f81f4928318d0320a8c710cea247f255c04"
     end
   end
 
