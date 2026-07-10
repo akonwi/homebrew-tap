@@ -1,24 +1,24 @@
 class Tinear < Formula
   desc "Terminal UI for Linear"
   homepage "https://github.com/akonwi/tinear"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/akonwi/tinear/releases/download/v0.6.0/tinear-darwin-arm64.tar.gz"
-      sha256 "a3eb650b069825b7a22421c68580c8171d4f247434760ad2f60f28444473ccec"
+      url "https://github.com/akonwi/tinear/releases/download/v0.6.1/tinear-darwin-arm64.tar.gz"
+      sha256 "4ccad586fe6c41ca56c92ebac10bf86985062b3c5d1ad52a870b16f6e0a47608"
     else
-      url "https://github.com/akonwi/tinear/releases/download/v0.6.0/tinear-darwin-amd64.tar.gz"
-      sha256 "c0b8f0d1a198883ec8cef41fdc1cbe250d371121e19f989cfb37c3b23ba1f584"
+      url "https://github.com/akonwi/tinear/releases/download/v0.6.1/tinear-darwin-amd64.tar.gz"
+      sha256 "967cac01b85d4adfd7e0aec6a5608c14f8d3fd958c0ace2710e4304992dc99a9"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/tinear/releases/download/v0.6.0/tinear-linux-arm64.tar.gz"
-      sha256 "a9967aeb57ec1d5e028618f31555393208893647a5ef979bdd54acbb0808327e"
+      url "https://github.com/akonwi/tinear/releases/download/v0.6.1/tinear-linux-arm64.tar.gz"
+      sha256 "5421f16e140a519ec72903ab8ba20f6ea2ab72a37f25e2591d6aba56642ab552"
     else
-      url "https://github.com/akonwi/tinear/releases/download/v0.6.0/tinear-linux-amd64.tar.gz"
-      sha256 "216650d136876a9929fae5d2f9501651741f243cd9d9e002a342607f98c22601"
+      url "https://github.com/akonwi/tinear/releases/download/v0.6.1/tinear-linux-amd64.tar.gz"
+      sha256 "c9f8cd72a2dbad4398a6de191d58899f7bf4503c2374f8af77ca201d126d98e4"
     end
   end
 
