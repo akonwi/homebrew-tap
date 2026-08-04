@@ -1,24 +1,24 @@
 class Ard < Formula
   desc "Programming language and compiler"
   homepage "https://github.com/akonwi/ard"
-  version "0.35.0"
+  version "0.35.1"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/akonwi/ard/releases/download/v0.35.0/ard_v0.35.0_darwin_arm64.tar.gz"
-      sha256 "f57425773ee8a73f5bba9e703917c8912f6927c9ec713451a7373bce812855f0"
+      url "https://github.com/akonwi/ard/releases/download/v0.35.1/ard_v0.35.1_darwin_arm64.tar.gz"
+      sha256 "82de52afe115043ad14fee8a108d457fb9405136f7b9bf52b139f8c98824698f"
     else
-      url "https://github.com/akonwi/ard/releases/download/v0.35.0/ard_v0.35.0_darwin_amd64.tar.gz"
-      sha256 "546806a3bd0416b3aefdefb7169eeddfe8fce42554260cb60001b74674999638"
+      url "https://github.com/akonwi/ard/releases/download/v0.35.1/ard_v0.35.1_darwin_amd64.tar.gz"
+      sha256 "967fe5a2116e63fa5be28b42eb24e9a85f797211f4ebbbd4d6c7b6e739e177e2"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/ard/releases/download/v0.35.0/ard_v0.35.0_linux_arm64.tar.gz"
-      sha256 "a38db7b76b288bfaae5b6dc231c787f25769bfd6a738fd2d8ea4fa132f28dcfc"
+      url "https://github.com/akonwi/ard/releases/download/v0.35.1/ard_v0.35.1_linux_arm64.tar.gz"
+      sha256 "9dfdb1fe8c852e9f1d8c831d8b51d019bb4e6adc30a3963b6d5eb451398a67db"
     else
-      url "https://github.com/akonwi/ard/releases/download/v0.35.0/ard_v0.35.0_linux_amd64.tar.gz"
-      sha256 "7b1d7e7f6a42d030149375c48c219f33607976c2be507d2586c56e3a2bec915c"
+      url "https://github.com/akonwi/ard/releases/download/v0.35.1/ard_v0.35.1_linux_amd64.tar.gz"
+      sha256 "1ba185003a82870195c104440483c3f20bc1db95ddbe996efa2c01eaf908bcf7"
     end
   end
 
@@ -27,6 +27,6 @@ class Ard < Formula
   end
 
   test do
-    assert_match "v0.35.0", shell_output("#{bin}/ard version")
+    assert_match "v0.35.1", shell_output("#{bin}/ard version")
   end
 end
