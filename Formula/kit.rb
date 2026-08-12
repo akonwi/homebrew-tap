@@ -1,24 +1,24 @@
 class Kit < Formula
   desc "Terminal-first coding agent"
   homepage "https://github.com/akonwi/kit"
-  version "0.27.1"
+  version "0.28.0"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/akonwi/kit/releases/download/v0.27.1/kit_v0.27.1_darwin_arm64.tar.gz"
-      sha256 "6820a6ac708ba8f066d7b55a4252a853f1c8ca20760d0d7334acde99f2e3cf0d"
+      url "https://github.com/akonwi/kit/releases/download/v0.28.0/kit_v0.28.0_darwin_arm64.tar.gz"
+      sha256 "e52b4d1444849a205eb1f50384b0478575ffef9ee271b354ebf5bccc5dccbc19"
     else
-      url "https://github.com/akonwi/kit/releases/download/v0.27.1/kit_v0.27.1_darwin_amd64.tar.gz"
-      sha256 "e2b812348f7648b3c6b63c83053cec98da350aba7272315af6bf6e4d1ec09a0e"
+      url "https://github.com/akonwi/kit/releases/download/v0.28.0/kit_v0.28.0_darwin_amd64.tar.gz"
+      sha256 "b61fed0d4bcc4e66d4ccf74f317d0aedaf17b21ce3ef2417b44e260dee8258ba"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kit/releases/download/v0.27.1/kit_v0.27.1_linux_arm64.tar.gz"
-      sha256 "f14e88455c4818e38f1c7354e2da375b500d619c3aa27f6059ddc7d9de3a75e8"
+      url "https://github.com/akonwi/kit/releases/download/v0.28.0/kit_v0.28.0_linux_arm64.tar.gz"
+      sha256 "c25f31fad905b3287cf88c99bcc6fae55f7ebb8025c5d7af271b7d2e883fc326"
     else
-      url "https://github.com/akonwi/kit/releases/download/v0.27.1/kit_v0.27.1_linux_amd64.tar.gz"
-      sha256 "1418a9f782d15a635890bc50e89a9fce4b1c9fa536b6de8c5b480faf8fa7141d"
+      url "https://github.com/akonwi/kit/releases/download/v0.28.0/kit_v0.28.0_linux_amd64.tar.gz"
+      sha256 "3b5506c02e686232eae79ec0d90a7900281d3aff64a0ffafc14303411cac0a80"
     end
   end
 
@@ -31,6 +31,6 @@ class Kit < Formula
   end
 
   test do
-    assert_match "v0.27.1", shell_output("#{bin}/kit version")
+    assert_match "v0.28.0", shell_output("#{bin}/kit version")
   end
 end
