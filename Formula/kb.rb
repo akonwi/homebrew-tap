@@ -5,21 +5,21 @@ class Kb < Formula
 
   if OS.mac?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kb/releases/download/v0.1.0/kb-darwin-arm64.tar.gz"
-      sha256 "c965a584fdcf74cc7d306d1be70b54b54a848e2aae80f12996c99dab2df367cd"
+      url "https://github.com/akonwi/kb/releases/download/v0.2.0/kb-darwin-arm64.tar.gz"
+      sha256 "68dbbeee39bda4ee2e0c0cb688089442e873d5e4042888572accbf67c0d3e846"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kb/releases/download/v0.1.0/kb-darwin-amd64.tar.gz"
-      sha256 "a3bf9627cca58621998f2b05bb714f5854f67bd929dc750a80ac3897d69ef34c"
+      url "https://github.com/akonwi/kb/releases/download/v0.2.0/kb-darwin-amd64.tar.gz"
+      sha256 "882101be780a515efe9b3288a598541b15be486fad4828e6e58d6d08b18b2e35"
     else
       odie "kb supports only arm64 and x86_64"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kb/releases/download/v0.1.0/kb-linux-arm64.tar.gz"
-      sha256 "657bd6e82450d07cb312c0c63cbaf454b9384b5308dc4b2e80b51944c60fa74f"
+      url "https://github.com/akonwi/kb/releases/download/v0.2.0/kb-linux-arm64.tar.gz"
+      sha256 "002008fead5ed0209c81795c646e27bace6a9f3176db0e36f0468ca16964f2ae"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kb/releases/download/v0.1.0/kb-linux-amd64.tar.gz"
-      sha256 "84d3c34953a78e8b0bd09eb07f1b8a056cb9578bc44ac6a6375b65b8ef5fa5a5"
+      url "https://github.com/akonwi/kb/releases/download/v0.2.0/kb-linux-amd64.tar.gz"
+      sha256 "3b6e8bc1e8765cf2d66d117d3bf2b0ce7e1738202d46887f979c3158298cfb2a"
     else
       odie "kb supports only arm64 and x86_64"
     end
@@ -30,6 +30,6 @@ class Kb < Formula
   end
 
   test do
-    assert_equal "kb v0.1.0", shell_output("#{bin}/kb version").strip
+    assert_equal "kb v0.2.0", shell_output("#{bin}/kb version").strip
   end
 end
