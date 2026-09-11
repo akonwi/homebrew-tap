@@ -1,24 +1,24 @@
 class Migr < Formula
   desc "Database migration tool"
   homepage "https://github.com/akonwi/migr"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/akonwi/migr/releases/download/v0.1.1/migr-darwin-arm64.tar.gz"
-      sha256 "3c6f9c86829130ace191946f384fe85ff61cc6ae132696d0e483a595d9673db3"
+      url "https://github.com/akonwi/migr/releases/download/v0.1.2/migr-darwin-arm64.tar.gz"
+      sha256 "95dcb5ed5167135b1df79c78b33f09431328364e54552a2c97dfc21be8115101"
     else
-      url "https://github.com/akonwi/migr/releases/download/v0.1.1/migr-darwin-amd64.tar.gz"
-      sha256 "47ff875abc57ffa0c6a83980fc714e410fc3fe108bf31996d4c3929323fc2a5d"
+      url "https://github.com/akonwi/migr/releases/download/v0.1.2/migr-darwin-amd64.tar.gz"
+      sha256 "a66d4ee2c366bd97e1c9a54595d6632acc9ee803a5e4b07deb1afcb650e6600f"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/migr/releases/download/v0.1.1/migr-linux-arm64.tar.gz"
-      sha256 "49328783ed5fa126554e422cdd04cb90081ba3111baedea39c960af07fae7da3"
+      url "https://github.com/akonwi/migr/releases/download/v0.1.2/migr-linux-arm64.tar.gz"
+      sha256 "242a1d2f92ae494eb32c8174c990b1507cf129d6ba4850c475f26ba77d095982"
     else
-      url "https://github.com/akonwi/migr/releases/download/v0.1.1/migr-linux-amd64.tar.gz"
-      sha256 "05d693b8de1ede54db6c80032b07a691994003cfc5fef6c4cd453bf73f220e17"
+      url "https://github.com/akonwi/migr/releases/download/v0.1.2/migr-linux-amd64.tar.gz"
+      sha256 "f6080cbcb8ca93c9048189915c0126b4de805f724a5a5ad68064b8ada0b6d4c5"
     end
   end
 
