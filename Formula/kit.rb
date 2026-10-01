@@ -1,7 +1,6 @@
 class Kit < Formula
   desc "Terminal-first coding agent"
   homepage "https://github.com/akonwi/kit"
-  version "0.39.0"
   license "MIT"
 
   depends_on macos: :sonoma if OS.mac?
