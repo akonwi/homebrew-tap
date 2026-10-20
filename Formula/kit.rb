@@ -7,19 +7,19 @@ class Kit < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/akonwi/kit/releases/download/v0.47.0/kit_v0.47.0_darwin_arm64.tar.gz"
-      sha256 "f4e8e556d976834e1ae92b68e791b9e0c2d69d8fdde46c5c610d226dfca3542a"
+      url "https://github.com/akonwi/kit/releases/download/v0.48.0/kit_v0.48.0_darwin_arm64.tar.gz"
+      sha256 "291a67f718190725ea0ea98025931ac26909a3c60c41df4590847b0cce1c7650"
     else
-      url "https://github.com/akonwi/kit/releases/download/v0.47.0/kit_v0.47.0_darwin_amd64.tar.gz"
-      sha256 "eef048ea43cc53a43138a3b25459d358ddfca81765300248fca9095ea488c44d"
+      url "https://github.com/akonwi/kit/releases/download/v0.48.0/kit_v0.48.0_darwin_amd64.tar.gz"
+      sha256 "d21ee097b04d2d377a97d09565170926673b5fc4582009602e97e5271e642b28"
     end
   elsif OS.linux?
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akonwi/kit/releases/download/v0.47.0/kit_v0.47.0_linux_arm64.tar.gz"
-      sha256 "baacbe846c6fa532ca0384e862283e53c85d6dbcf32d2c17ef9225020dc2b964"
+      url "https://github.com/akonwi/kit/releases/download/v0.48.0/kit_v0.48.0_linux_arm64.tar.gz"
+      sha256 "c9134d360427eaa303304224ae3d4148dae6b327c856e09eedd39f998bfbe6dc"
     else
-      url "https://github.com/akonwi/kit/releases/download/v0.47.0/kit_v0.47.0_linux_amd64.tar.gz"
-      sha256 "37002dc22dbc77981e43890986b918e95f41ff5d42e8ddfd11575a8fdd1ab1a3"
+      url "https://github.com/akonwi/kit/releases/download/v0.48.0/kit_v0.48.0_linux_amd64.tar.gz"
+      sha256 "45154d955d7cae58e2f6aa6911395e67ad353ff6df16c00bc983279b41e9320a"
     end
   end
 
@@ -28,7 +28,7 @@ class Kit < Formula
   end
 
   test do
-    assert_match "kit 0.47.0 (", shell_output("#{bin}/kit version")
+    assert_match "kit 0.48.0 (", shell_output("#{bin}/kit version")
     assert_match "Manage the local Kit server", shell_output("#{bin}/kit server --help")
   end
 end
