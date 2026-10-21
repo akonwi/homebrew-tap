@@ -7,6 +7,7 @@ cask "kit-app" do
   desc "Native desktop client for the Kit coding agent"
   homepage "https://github.com/akonwi/kit"
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :sequoia
 
