@@ -1,11 +1,17 @@
 cask "kit-app" do
-  version "0.4.0"
-  sha256 "3ab80eead4f1cbf1cc5d8e380a110e6751a597639fd88a3942387b905dc87c24"
+  version "0.5.0"
+  sha256 "3ae869a1e5ef8f3ed87ef8a48106e94d4f77d55a9c3aa53cfa59355f89ce62b7"
 
   url "https://github.com/akonwi/kit/releases/download/macos-v#{version}/kit_macos-v#{version}_darwin_arm64.zip"
   name "Kit"
   desc "Native desktop client for the Kit coding agent"
   homepage "https://github.com/akonwi/kit"
+
+  livecheck do
+    url :url
+    regex(/^macos-v?(\d+(?:\.\d+)+)$/i)
+    strategy :github_releases
+  end
 
   auto_updates true
   depends_on arch: :arm64
