@@ -1,6 +1,6 @@
 cask "kit-app" do
-  version "0.6.1"
-  sha256 "056b0a9cca88410adedf244dc8287d9c7c2e1229f171fff1286c6688638f260b"
+  version "0.7.0"
+  sha256 "f2b656d16b946b6fdfaeead9d4f1e9a396c36e40d2a9d2b479bdb57aeec3dd60"
 
   url "https://github.com/akonwi/kit/releases/download/macos-v#{version}/kit_macos-v#{version}_darwin_arm64.zip"
   name "Kit"
